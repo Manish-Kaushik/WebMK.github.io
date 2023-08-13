@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <title>
+        Registration Page
+    </title>
+    <style>
+        a:link {
+            color: #ffffff;
+            background-color: black;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #00fff2;
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+        }
+
+
+        body {
+            background-image: url(7.jpg);
+            background-position: center;
+            background-size: cover;
+            opacity: 100%;
+        }
+
+        #header {
+            line-height: 2;
+            text-align: center;
+            size: 100px;
+            color: #00fff2;
+        }
+
+        input[type=text] {
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: #00fff2;
+            color: rgb(0, 0, 0);
+            width: 60%;
+        }
+
+        input[type=date] {
+
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: #00fff2;
+            color: rgb(0, 0, 0);
+            width: 60%;
+        }
+
+        #State {
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: #00fff2;
+            color: rgb(0, 0, 0);
+            width: 60%;
+        }
+
+        table {
+            border: 10px solid black;
+            background-color: rgb(0, 0, 0);
+            margin-top: auto;
+            border-radius: 10px;
+            
+        }
+
+        table tr td th {
+            font-size: 10px;
+            text-align: left;
+        }
+
+        button {
+            font-size: 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px 15px;
+            background-color: #000000;
+            background-size: 100%;
+        }
+
+        #bt {
+            font-size: 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px 15px;
+            background-color: #00fff2;
+            background-size: 100%;
+        }
+
+        label {
+            color: #00fff2;
+            font-size: 20px;
+        }
+
+
+        div {
+            text-align: left;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+
+<body bgcolor="black" align="center">
+
+    <form method="post" action="DB_registration_Form.php">
+        <div>
+            <button><a href="index.html">Home</a>
+            </button>
+        </div>
+        <table border="10" align="center" height="80%" width="30%">
+            <tr>
+                <td colspan="23" align="center">
+                    <h1 id="header">
+                        <u>Registration page</u>
+                        <input type="image" src="10.png" align="right" height="100px" width="100px">
+                </td>
+                </h1>
+            </tr>
+            <tr>
+                <td> <label>Userid </label> </td>
+                <td> <input type="text" placeholder="Enter UserID" name="id">
+
+                    <input type="submit" id="bt" name="Show" value="Show">
+
+                </td>
+            </tr>
+            <tr>
+                <td> <label>User Name </label> </td>
+                <td> <input type="text" placeholder="Enter User Name" name="Name">
+            <tr>
+                <td> <label>DOB </label> </td>
+                <td> <input type="date" placeholder="Enter Date of Birth" name="DOB">
+            </tr>
+
+            <tr>
+                <td> <label>State </label> </td>
+
+                <td><select id="State" name="State">
+                        <option id="State" value="UP">Uttar Pradesh</option>
+                        <option id="State" value="UK">UttraKhand</option>
+                        <option id="State" value="Gujrat">Gujrat</option>
+                        <option id="State" value="Haryana">Haryana</option>
+                        <option id="State" value="Bihar">Bihar</option>
+                        <option id="State" value="Delhi">Delhi</option>
+                        <option id="State" value="Jammu&Kashmir">JK</option>
+                    </select></td>
+            </tr>
+
+
+
+            <td colspan="2" align="center"> <label>Gender </label> </td>
+            <tr>
+                <td> <label>Male </label></td>
+                <td> <input type="radio" name="Gender" value="Male" checked> </td>
+            </tr>
+            <tr>
+                <td><label>Female </label></td>
+                <td> <input type="radio" name="Gender" value="Female"> </td>
+            </tr>
+            </td>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" id="bt" name="Insert" value="Insert">
+                    <input type="submit" id="bt" name="Update" value="Update">
+                    <input type="submit" id="bt" name="Delete" value="Delete">
+                    <input type="reset" id="bt" value="Reset" name="Reset">
+
+                </td>
+            </tr>
+            <tr>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>
